@@ -2,6 +2,7 @@ import express from "express";
 import userController from "./controllers/userController";
 
 const app = express();
+//jsonでreq,resを取得する
 app.use(express.json());
 
 app.get("/", (req, res) => {
